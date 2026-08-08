@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Yunus Özen'in teknoloji, yazılım ve üretim üzerine kişisel notları."
+    />
+    <meta name="theme-color" content="#f3efe7" />
+    <meta property="og:title" content="Yunus Özen" />
+    <meta
+      property="og:description"
+      content="Teknoloji, yazılım ve üretim üzerine kişisel notlar."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yunus.gen.tr/" />
+    <title>Yunus Özen — Notlar</title>
+    <link rel="canonical" href="https://yunus.gen.tr/" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Yunus Özen ana sayfa">YÖ</a>
+      <nav aria-label="Ana menü">
+        <a href="#yazilar">Yazılar</a>
+        <a href="#hakkimda">Hakkımda</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Yunus Özen'in kişisel alanı</p>
+        <h1 id="hero-title">Öğrendiklerimi<br />yazarak biriktiriyorum.</h1>
+        <p class="intro">
+          Yazılım, ağ teknolojileri, veri ve ortaya bir şey çıkarma süreci üzerine
+          kısa notlar.
+        </p>
+        <a class="button" href="#yazilar">Yazılara göz at <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section id="yazilar" class="posts" aria-labelledby="posts-title">
+        <div class="section-heading">
+          <p class="eyebrow">Son notlar</p>
+          <h2 id="posts-title">Henüz ilk sayfadayız.</h2>
+        </div>
+        <article class="post-card">
+          <div>
+            <p class="post-meta"><time datetime="2026-08-09">9 Ağustos 2026</time> · 1 dk</p>
+            <h3>Merhaba dünya</h3>
+            <p>
+              yunus.gen.tr yeniden kuruluyor. Yakında burada projelerden, denemelerden
+              ve yol boyunca öğrendiklerimden söz edeceğim.
+            </p>
+          </div>
+          <span class="post-number" aria-hidden="true">01</span>
+        </article>
+      </section>
+
+      <section id="hakkimda" class="about" aria-labelledby="about-title">
+        <p class="eyebrow">Hakkımda</p>
+        <h2 id="about-title">Merak ettiğim şeyleri kurcalıyor, işe yarayanları paylaşıyorum.</h2>
+        <p>
+          Burası bitmiş cevaplardan çok, gerçek projeler sırasında oluşan notların
+          yaşayacağı bir çalışma alanı.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year">2026</span> Yunus Özen</p>
+      <a href="https://github.com/yunusozen" rel="me">GitHub</a>
+    </footer>
+
+    <script>
+      document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
