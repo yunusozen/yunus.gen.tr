@@ -146,19 +146,22 @@ h2 {
   list-style: none;
 }
 
-.publication-list li {
+.publication-list li,
+.thesis-list li {
   display: grid;
   grid-template-columns: 56px 1fr;
   gap: 14px;
   margin-bottom: 16px;
 }
 
-.publication-list time {
+.publication-list time,
+.thesis-list time {
   color: var(--accent-dark);
   font-style: italic;
 }
 
-.publication-list span {
+.publication-list span,
+.thesis-list span {
   font-size: 0.9rem;
 }
 
@@ -177,6 +180,12 @@ h2 {
 
 .all-publications {
   margin: 30px 0 22px;
+}
+
+.thesis-list {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
 }
 
 .all-publications summary {
@@ -284,7 +293,8 @@ hr {
     height: 132px;
   }
 
-  .publication-list li {
+  .publication-list li,
+  .thesis-list li {
     grid-template-columns: 48px 1fr;
     gap: 10px;
   }
