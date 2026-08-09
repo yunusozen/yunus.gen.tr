@@ -31,11 +31,13 @@ a {
   color: inherit;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  transition: background-color 120ms ease, color 120ms ease;
 }
 
 a:hover,
 a:focus-visible {
-  color: var(--accent-dark);
+  background-color: var(--accent);
+  color: var(--text);
 }
 
 .skip-link {
@@ -56,14 +58,34 @@ a:focus-visible {
   margin-bottom: 42px;
 }
 
+.header-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  padding: 5px 9px;
+  background: var(--accent);
+}
+
 .site-title {
   display: block;
-  padding: 5px 8px;
-  background: var(--accent);
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-decoration: none;
+}
+
+.site-title:hover,
+.site-title:focus-visible {
+  background: transparent;
+}
+
+.site-tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: right;
 }
 
 nav {
@@ -75,6 +97,7 @@ nav {
 }
 
 nav a {
+  padding-inline: 2px;
   text-decoration: none;
 }
 
@@ -168,6 +191,14 @@ h2 {
 .publication-list strong > a,
 .full-publication-list strong > a {
   text-decoration: none;
+}
+
+.publication-list strong > a:hover,
+.publication-list strong > a:focus-visible,
+.full-publication-list strong > a:hover,
+.full-publication-list strong > a:focus-visible {
+  background-color: var(--accent);
+  color: var(--text);
 }
 
 .publication-list strong > a::after,
@@ -281,6 +312,17 @@ hr {
 
   .site-header {
     margin-bottom: 34px;
+  }
+
+  .header-topline {
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .site-tagline {
+    font-size: 0.66rem;
+    text-align: right;
   }
 
   .intro {
