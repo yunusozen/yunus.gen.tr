@@ -219,6 +219,17 @@ h2 {
   list-style: none;
 }
 
+.project-list {
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.project-list li + li {
+  margin-top: 16px;
+}
+
 .all-publications summary {
   cursor: pointer;
   font-weight: 700;
